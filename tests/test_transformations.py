@@ -1,4 +1,4 @@
-import dummy_transformations as dt
+import players_from_as as dt
 
 
 def test_add_offset():
