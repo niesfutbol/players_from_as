@@ -18,5 +18,17 @@ def obtain_data_from_statistics(statistics):
     }
     return expected
 
+
 def obtain_data_from_player(player):
-    pass
+    expected = {
+        "name": player["name"],
+        "firstname": player["firstname"],
+        "lastname": player["lastname"],
+        "age": player["age"],
+        "nationality": player["nationality"],
+        "height": player["height"],
+        "weight": player["weight"],
+        "photo": player["photo"],
+        "full_name": f"{player['firstname']} {player['lastname']}",
+    }
+    return expected
