@@ -36,5 +36,6 @@ statistics = {
     "penalty": {"won": None, "commited": None, "scored": 0, "missed": 0, "saved": 0},
 }
 
+
 def test_obtain_data_from_statistics():
     pfa.obtain_data_from_statistics(statistics)
