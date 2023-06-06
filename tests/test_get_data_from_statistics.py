@@ -86,7 +86,7 @@ def test_obtain_data_from_statistics():
         "duels_total": 16,
         "duels_won": 13,
         "team_name": "Manchester City",
-        "team_logo": "https://media-3.api-sports.io/football/teams/50.png",
+        "team_logo": "https://media-2.api-sports.io/football/teams/50.png",
         "league_name": "Premier League",
         "league_logo": "https://media-3.api-sports.io/football/leagues/39.png",
     }
@@ -104,6 +104,10 @@ def test_obtain_data_from_statistics():
         "tackles_interceptions": 9,
         "duels_total": 104,
         "duels_won": 70,
+        "team_name": "Manchester City",
+        "team_logo": "https://media-3.api-sports.io/football/teams/50.png",
+        "league_name": "Premier League",
+        "league_logo": "https://media-3.api-sports.io/football/leagues/39.png",
     }
     obtained = pfa.obtain_data_from_statistics(statistics_2)
     assert obtained == expected
