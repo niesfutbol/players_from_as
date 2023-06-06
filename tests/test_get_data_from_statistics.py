@@ -128,4 +128,16 @@ def test_obtain_data_from_statistics():
 
 
 def test_obtain_data_from_player():
-     pfa.obtain_data_from_player(player)
+    expected = {
+        "name": "J. Stones",
+        "firstname": "John",
+        "lastname": "Stones",
+        "age": 29,
+        "nationality": "England",
+        "height": "188 cm",
+        "weight": "80 kg",
+        "photo": "https://media-3.api-sports.io/football/players/626.png",
+        "full_name": "John Stones",
+    }
+    obtained = pfa.obtain_data_from_player(player)
+    assert obtained == expected, "Assert the player info"
