@@ -21,9 +21,6 @@ def obtain_data_from_statistics(statistics):
 
 def obtain_data_from_player(player):
     expected = {
-        "name": player["name"],
-        "firstname": player["firstname"],
-        "lastname": player["lastname"],
         "age": player["age"],
         "nationality": player["nationality"],
         "height": player["height"],
