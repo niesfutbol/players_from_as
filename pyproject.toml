@@ -8,7 +8,7 @@ author-email = "nepo@nies.futbol"
 classifiers = [ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",]
 description-file = "README.md"
 home-page = "https://github.com/niesfutbol/players_from_as"
-module = "players_as"
+module = "players_from_as"
 requires = [
 ]
 requires-python=">=3.9"

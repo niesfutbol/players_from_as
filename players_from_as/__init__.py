@@ -1,4 +1,5 @@
-"""A template Python module"""
+"""Module to work with statistics data from players"""
 
-__version__ = "0.4.0"
+__version__ = "0.1.0"
 from .transformations import add_offset  # noqa
+from .get_data_from_statistics import obtain_data_from_statistics  # noqa
