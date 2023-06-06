@@ -17,3 +17,6 @@ def obtain_data_from_statistics(statistics):
         "league_logo": statistics["league"]["logo"],
     }
     return expected
+
+def obtain_data_from_player(player):
+    pass
