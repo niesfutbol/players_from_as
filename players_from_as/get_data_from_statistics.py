@@ -11,5 +11,9 @@ def obtain_data_from_statistics(statistics):
         "tackles_interceptions": statistics["tackles"]["interceptions"],
         "duels_total": statistics["duels"]["total"],
         "duels_won": statistics["duels"]["won"],
+        "team_name": statistics["team"]["name"],
+        "team_logo": statistics["team"]["logo"],
+        "league_name": statistics["league"]["name"],
+        "league_logo": statistics["league"]["logo"],
     }
     return expected
