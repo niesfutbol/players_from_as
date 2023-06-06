@@ -38,4 +38,18 @@ statistics = {
 
 
 def test_obtain_data_from_statistics():
-    pfa.obtain_data_from_statistics(statistics)
+    expected = {
+        "minutes": 3150,
+        "shots_total": None,
+        "shots_on": None,
+        "passes_total": 1068,
+        "passes_key": 1,
+        "passes_accuracy": 26,
+        "tackles_total": 3,
+        "tackles_blocks": None,
+        "tackles_interceptions": 1,
+        "duels_total": 16,
+        "duels_won": 13,
+    }
+    obtained = pfa.obtain_data_from_statistics(statistics)
+    assert obtained == expected
