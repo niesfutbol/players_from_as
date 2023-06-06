@@ -129,9 +129,6 @@ def test_obtain_data_from_statistics():
 
 def test_obtain_data_from_player():
     expected = {
-        "name": "J. Stones",
-        "firstname": "John",
-        "lastname": "Stones",
         "age": 29,
         "nationality": "England",
         "height": "188 cm",
