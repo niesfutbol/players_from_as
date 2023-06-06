@@ -71,6 +71,20 @@ statistics_2 = {
     "penalty": {"won": None, "commited": None, "scored": 0, "missed": 0, "saved": None},
 }
 
+player = {
+    "id": 626,
+    "name": "J. Stones",
+    "firstname": "John",
+    "lastname": "Stones",
+    "age": 29,
+    "birth": {"date": "1994-05-28", "place": "Barnsley", "country": "England"},
+    "nationality": "England",
+    "height": "188 cm",
+    "weight": "80 kg",
+    "injured": False,
+    "photo": "https://media-3.api-sports.io/football/players/626.png",
+}
+
 
 def test_obtain_data_from_statistics():
     expected = {
@@ -111,3 +125,7 @@ def test_obtain_data_from_statistics():
     }
     obtained = pfa.obtain_data_from_statistics(statistics_2)
     assert obtained == expected
+
+
+def test_obtain_data_from_player():
+     pfa.obtain_data_from_player(player)
