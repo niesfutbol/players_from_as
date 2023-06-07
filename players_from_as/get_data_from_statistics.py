@@ -30,3 +30,7 @@ def obtain_data_from_player(player):
         "curp": f"{player['lastname'][0:2]}{player['firstname'][0]}{player['nationality'][0:2]}".upper(),
     }
     return expected
+
+
+def get_player_info():
+    pass

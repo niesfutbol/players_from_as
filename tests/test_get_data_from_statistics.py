@@ -140,5 +140,6 @@ def test_obtain_data_from_player():
     obtained = pfa.obtain_data_from_player(player)
     assert obtained == expected, "Assert the player info"
 
+
 def test_get_player_info():
     pfa.get_player_info()
