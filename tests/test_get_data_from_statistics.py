@@ -188,4 +188,29 @@ def test_get_player_info():
 
 
 def test_get_player_info_from_list():
-    pfa.get_player_info_from_list()
+    obtained = pfa.get_player_info_from_list()
+    expected = {
+        "age": 29,
+        "nationality": "England",
+        "height": "188 cm",
+        "weight": "80 kg",
+        "photo": "https://media-3.api-sports.io/football/players/626.png",
+        "full_name": "John Stones",
+        "curp": "STJEN",
+        "minutes": 1849,
+        "shots_total": 9,
+        "shots_on": 3,
+        "passes_total": 1511,
+        "passes_key": 8,
+        "passes_accuracy": 61,
+        "tackles_total": 23,
+        "tackles_blocks": 10,
+        "tackles_interceptions": 9,
+        "duels_total": 104,
+        "duels_won": 70,
+        "team_name": "Manchester City",
+        "team_logo": "https://media-3.api-sports.io/football/teams/50.png",
+        "league_name": "Premier League",
+        "league_logo": "https://media-3.api-sports.io/football/leagues/39.png",
+    }
+    assert obtained["626"] == expected, "Assert the full player info from list"
