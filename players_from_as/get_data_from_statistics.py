@@ -27,5 +27,6 @@ def obtain_data_from_player(player):
         "weight": player["weight"],
         "photo": player["photo"],
         "full_name": f"{player['firstname']} {player['lastname']}",
+        "curp": f"{player['lastname'][0:2]}{player['firstname'][0]}{player['nationality'][0:2]}".upper(),
     }
     return expected
