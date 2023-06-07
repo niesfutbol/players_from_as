@@ -32,5 +32,8 @@ def obtain_data_from_player(player):
     return expected
 
 
-def get_player_info():
-    pass
+def get_player_info(player):
+    return {
+        **obtain_data_from_player(player["player"]),
+        **obtain_data_from_statistics(player["statistics"]),
+    }
