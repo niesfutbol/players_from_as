@@ -216,4 +216,4 @@ def test_get_player_info_from_list():
         "league_name": "Premier League",
         "league_logo": "https://media-3.api-sports.io/football/leagues/39.png",
     }
-    assert obtained["626"] == expected, "Assert the full player info from list"
+    assert obtained[626] == expected, "Assert the full player info from list"
