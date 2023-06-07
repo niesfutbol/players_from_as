@@ -135,7 +135,7 @@ def test_obtain_data_from_player():
         "weight": "80 kg",
         "photo": "https://media-3.api-sports.io/football/players/626.png",
         "full_name": "John Stones",
-        "curp": "STJEN",
+        "curp": "STJ940528HEN",
     }
     obtained = pfa.obtain_data_from_player(player)
     assert obtained == expected, "Assert the player info"
