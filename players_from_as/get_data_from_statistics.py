@@ -37,3 +37,7 @@ def get_player_info(player):
         **obtain_data_from_player(player["player"]),
         **obtain_data_from_statistics(player["statistics"]),
     }
+
+
+def get_player_info_from_list():
+    pass
