@@ -1,4 +1,12 @@
+import json
 import players_from_as as pfa
+
+
+def test_get_player_info_from_list_from_json():
+    f = open("tests/data/data_statisitcs_players_team_39_season_2022_page_2.json")
+    players = json.load(f)
+    obtained = pfa.get_player_info_from_list(players["response"])
+    assert obtained[24888]["curp"] == "HWHKO", "Assert curp of Hwang Hee-Chan"
 
 
 statistics = {
@@ -99,8 +107,8 @@ player_2 = {
     "photo": "https://media-3.api-sports.io/football/players/617.png",
 }
 
-full_player = {"player": player, "statistics": statistics_2}
-full_player_2 = {"player": player_2, "statistics": statistics}
+full_player = {"player": player, "statistics": [statistics_2]}
+full_player_2 = {"player": player_2, "statistics": [statistics]}
 
 
 def test_obtain_data_from_statistics():
