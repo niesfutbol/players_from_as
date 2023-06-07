@@ -217,3 +217,5 @@ def test_get_player_info_from_list():
         "league_logo": "https://media-3.api-sports.io/football/leagues/39.png",
     }
     assert obtained[626] == expected, "Assert the full player info from list"
+    assert obtained[617]["minutes"] == 3150, "Assert minutos of Ederson"
+        
