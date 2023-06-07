@@ -85,7 +85,22 @@ player = {
     "photo": "https://media-3.api-sports.io/football/players/626.png",
 }
 
+player_2 = {
+    "id": 617,
+    "name": "Ederson",
+    "firstname": "Ederson",
+    "lastname": "Santana de Moraes",
+    "age": 30,
+    "birth": {"date": "1993-08-17", "place": "Osasco", "country": "Brazil"},
+    "nationality": "Brazil",
+    "height": "188 cm",
+    "weight": "86 kg",
+    "injured": False,
+    "photo": "https://media-3.api-sports.io/football/players/617.png",
+}
+
 full_player = {"player": player, "statistics": statistics_2}
+full_player_2 = {"player": player_2, "statistics": statistics}
 
 
 def test_obtain_data_from_statistics():
@@ -170,3 +185,7 @@ def test_get_player_info():
         "league_logo": "https://media-3.api-sports.io/football/leagues/39.png",
     }
     assert obtained == expected, "Assert the full player info"
+
+
+def test_get_player_info_from_list():
+    pfa.get_player_info_from_list()
