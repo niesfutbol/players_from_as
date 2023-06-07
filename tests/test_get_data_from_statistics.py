@@ -85,6 +85,8 @@ player = {
     "photo": "https://media-3.api-sports.io/football/players/626.png",
 }
 
+full_player = {"player": player, "statistics": statistics_2}
+
 
 def test_obtain_data_from_statistics():
     expected = {
@@ -142,7 +144,7 @@ def test_obtain_data_from_player():
 
 
 def test_get_player_info():
-    obtained = pfa.get_player_info(player)
+    obtained = pfa.get_player_info(full_player)
     expected = {
         "age": 29,
         "nationality": "England",
