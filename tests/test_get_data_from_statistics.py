@@ -218,3 +218,4 @@ def test_get_player_info_from_list():
     }
     assert obtained[626] == expected, "Assert the full player info from list"
     assert obtained[617]["minutes"] == 3150, "Assert minutos of Ederson"
+    assert obtained[617]["curp"] == "SAEBR", "Assert curp of Ederson"
