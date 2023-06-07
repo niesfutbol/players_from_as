@@ -40,4 +40,4 @@ def get_player_info(player):
 
 
 def get_player_info_from_list(list_of_players):
-    return {player["player"]["id"]:get_player_info(player) for player in list_of_players}
+    return {player["player"]["id"]: get_player_info(player) for player in list_of_players}
