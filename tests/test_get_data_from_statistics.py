@@ -187,8 +187,11 @@ def test_get_player_info():
     assert obtained == expected, "Assert the full player info"
 
 
+list_of_players = [full_player, full_player_2]
+
+
 def test_get_player_info_from_list():
-    obtained = pfa.get_player_info_from_list()
+    obtained = pfa.get_player_info_from_list(list_of_players)
     expected = {
         "age": 29,
         "nationality": "England",
